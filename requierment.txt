@@ -1,58 +1,18 @@
-# Requerimientos para el Laboratorio 7 - Predicción de Diabetes con AutoGluon
-# Autores: Javier Prado 21496, Luis Pedro Monterroso 21699
+# Mantén PyPI como índice principal y usa el repo de PyTorch SOLO para los wheels CUDA
+--extra-index-url https://download.pytorch.org/whl/cu126
 
-# ========== LIBRERÍAS PRINCIPALES ==========
-# Análisis y manipulación de datos
-pandas>=2.0.0
-numpy>=1.24.0
+# Librerías del proyecto
+autogluon==1.4.0
+pandas==2.3.2
+numpy==2.1.3
+matplotlib==3.10.6
+seaborn==0.13.2
+missingno==0.5.2
 
-# Visualización
-matplotlib>=3.7.0
-seaborn>=0.12.0
+# Dependencias para Torch 2.7.1 (evita conflictos del resolver)
+typing_extensions>=4.10
 
-# AutoGluon - Librería principal para ML automático
-autogluon>=1.0.0
-
-# ========== LIBRERÍAS DE SOPORTE ==========
-# Jupyter Notebook
-jupyter>=1.0.0
-ipykernel>=6.25.0
-
-# Análisis de datos faltantes (opcional pero recomendado)
-missingno>=0.5.2
-
-# Métricas y evaluación
-scikit-learn>=1.3.0
-
-# Utilitarios matemáticos adicionales
-scipy>=1.11.0
-
-# ========== DEPENDENCIAS DE AUTOGLUON ==========
-# AutoGluon instala automáticamente sus dependencias, pero se incluyen por claridad
-torch>=2.0.0
-lightgbm>=4.0.0
-xgboost>=1.7.0
-catboost>=1.2.0
-
-# ========== LIBRERÍAS ADICIONALES ÚTILES ==========
-# Para trabajar con fechas y tiempo
-python-dateutil>=2.8.0
-
-# Para configuración y logging
-pyyaml>=6.0
-tqdm>=4.65.0
-
-# Para análisis estadístico avanzado
-statsmodels>=0.14.0
-
-# ========== NOTAS DE INSTALACIÓN ==========
-# Para instalar todos los requerimientos ejecutar:
-# pip install -r requierment.txt
-#
-# Si tienes problemas con AutoGluon, puedes instalarlo por separado:
-# pip install autogluon
-#
-# Para entornos con GPU (opcional):
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-#
-# Versiones de Python soportadas: 3.8, 3.9, 3.10, 3.11
+# PyTorch + CUDA 12.6 (tu versión)
+torch==2.7.1+cu126
+# Paquete compañero de Torch 2.7.x
+torchvision==0.22.0+cu126
