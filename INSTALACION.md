@@ -2,7 +2,7 @@
 
 ## Autores
 - **Javier Prado** - 21496
-- **Luis Pedro Monterroso** - 21699
+- **Luis Pedro Montenegro** - 21699
 
 ## Requisitos del Sistema
 

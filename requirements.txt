@@ -13,6 +13,6 @@ missingno==0.5.2
 typing_extensions>=4.10
 
 # PyTorch + CUDA 12.6 (tu versión)
-torch==2.7.1+cu126
+torch==2.7.0+cu126
 # Paquete compañero de Torch 2.7.x
 torchvision==0.22.0+cu126
